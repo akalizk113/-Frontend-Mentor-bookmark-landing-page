@@ -69,8 +69,14 @@ const Feature = () => {
       <>
          <Box
             sx={{
-               width: '730px',
-               marginTop: '190px',
+               width: {
+                  xs: '100%',
+                  sm: 730,
+               },
+               mt: {
+                  xs: '150px',
+                  sm: '190px',
+               },
                marginRight: 'auto',
                marginLeft: 'auto',
                textAlign: 'center',
@@ -95,7 +101,26 @@ const Feature = () => {
                you can access them on the go.
             </Typography>
 
-            <StyledTabs value={tabValue} onChange={handleChange}>
+            <StyledTabs
+               value={tabValue}
+               onChange={handleChange}
+               sx={{
+                  '@media screen and (min-width: 375px) and (max-width: 768px)':
+                     {
+                        '& .MuiTabs-flexContainer': {
+                           flexDirection: 'column',
+                           borderBottom: '1px solid #dfdfdf',
+                        },
+                        '& button': {
+                           width: '100%',
+                           borderTop: '1px solid #dfdfdf',
+                        },
+                        '& .MuiTabs-indicator': {
+                           display: 'none',
+                        },
+                     },
+               }}
+            >
                <StyledTab label="Simple Bookmarking" {...a11yProps(0)} />
                <StyledTab label="Speedy Searching" {...a11yProps(1)} />
                <StyledTab label="Easy Sharing" {...a11yProps(2)} />

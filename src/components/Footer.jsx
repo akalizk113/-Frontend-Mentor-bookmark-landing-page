@@ -1,4 +1,4 @@
-import { Box, Typography, Stack } from '@mui/material';
+import { Box, Stack } from '@mui/material';
 import { styled } from '@mui/system';
 
 import FacebookIcon from '@mui/icons-material/Facebook';
@@ -20,21 +20,27 @@ const Footer = () => {
       <Box
          sx={{
             m: {
-               xs: '0 -24px 0',
+               xs: '0 -32px 0',
                sm: '0 -32px 0',
                md: '0 -64px 0',
                lg: '0 -165px 0',
             },
             p: {
-               xs: '0 24px 0',
+               xs: '36px 32px 0',
                sm: '0 32px 0',
                md: '0 64px 0',
                lg: '0 165px 0',
             },
-            height: '90px',
+            height: {
+               md: '90px',
+            },
             bgcolor: '#242946',
             display: 'flex',
             alignItems: 'center',
+            flexDirection: {
+               xs: 'column',
+               sm: 'row',
+            },
          }}
       >
          <svg width="148" height="25" xmlns="http://www.w3.org/2000/svg">
@@ -53,12 +59,35 @@ const Footer = () => {
                </g>
             </g>
          </svg>
-         <Stack direction="row" spacing={5} sx={{ marginLeft: '40px' }}>
+         <Stack
+            direction={{ xs: 'column', sm: 'row' }}
+            spacing={5}
+            sx={{
+               ml: {
+                  md: '40px',
+               },
+               mt: {
+                  xs: '40px',
+                  sm: 0,
+               },
+            }}
+         >
             <NavItem>feature</NavItem>
             <NavItem>pricing</NavItem>
             <NavItem>contact</NavItem>
          </Stack>
-         <Box sx={{ ml: 'auto', color: '#fff' }}>
+         <Box
+            sx={{
+               m: {
+                  xs: '40px 0',
+                  sm: 0,
+               },
+               ml: {
+                  sm: 'auto',
+               },
+               color: '#fff',
+            }}
+         >
             <FacebookIcon
                sx={{
                   mr: '24px',

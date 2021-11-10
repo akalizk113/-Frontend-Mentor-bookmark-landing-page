@@ -8,6 +8,7 @@ const ExtensionCard = (props) => {
          item
          lg={4}
          sm={6}
+         xs={12}
          sx={{
             height: '370px',
             alignSelf: { alignSelf },

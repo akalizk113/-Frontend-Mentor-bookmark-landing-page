@@ -1,4 +1,4 @@
-import { Button, Typography, Box, Input, FormHelperText } from '@mui/material';
+import { Button, Typography, Box, Input } from '@mui/material';
 import FormControl, { useFormControl } from '@mui/material/FormControl';
 import { isEmail } from 'validator';
 import ErrorIcon from '@mui/icons-material/Error';
@@ -60,17 +60,32 @@ const Contact = () => {
       <Box
          sx={{
             m: {
-               xs: '100px -24px 0',
+               xs: '100px -32px 0',
                sm: '100px -32px 0',
                md: '100px -64px 0',
                lg: '160px -165px 0',
             },
-            height: '360px',
+            height: {
+               md: '360px',
+            },
             bgcolor: 'hsl(231, 69%, 60%)',
             textAlign: 'center',
+            p: {
+               xs: '0 32px',
+               sm: 'unset',
+            },
          }}
       >
-         <Box sx={{ width: '445px', m: '0 auto', pt: '64px' }}>
+         <Box
+            sx={{
+               width: {
+                  xs: '100%',
+                  sm: '445px',
+               },
+               m: '0 auto',
+               pt: '64px',
+            }}
+         >
             <Typography
                variant="subtitle2"
                color="white"
@@ -79,6 +94,10 @@ const Contact = () => {
                   letterSpacing: '5px',
                   textTransform: 'uppercase',
                   mb: '36px',
+                  fontSize: {
+                     xs: '14px',
+                     sm: 'unset',
+                  },
                }}
             >
                35,000+ already joined
@@ -86,7 +105,7 @@ const Contact = () => {
             <Typography
                variant="h5"
                fontWeight="500"
-               fontSize="1.6rem"
+               fontSize={{ xs: '1.4rem', sm: '1.6rem' }}
                color="white"
             >
                Stay up-to-date with what we’re doing
@@ -99,15 +118,32 @@ const Contact = () => {
                sx={{
                   display: 'flex',
                   mt: '32px',
+                  flexDirection: {
+                     xs: 'column',
+                     sm: 'row',
+                  },
                }}
             >
                <FormControl
                   sx={{
                      flex: 1,
-                     mr: '16px',
+                     mr: {
+                        md: '16px',
+                     },
+                     mb: {
+                        xs: '40px',
+                        xl: 0,
+                     },
+
                      display: 'flex',
                      p: '2px',
                      position: 'relative',
+                     '& input': {
+                        height: {
+                           xs: '42px',
+                           sm: 'unset',
+                        },
+                     },
                   }}
                >
                   <Input
@@ -138,7 +174,15 @@ const Contact = () => {
                   color="secondary"
                   size="large"
                   type="submit"
-                  sx={{ ml: 'auto' }}
+                  sx={{
+                     ml: {
+                        sm: 'auto',
+                     },
+                     mb: {
+                        xs: '36px',
+                        sm: 0,
+                     },
+                  }}
                >
                   Contact Us
                </Button>

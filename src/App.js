@@ -13,10 +13,14 @@ function App() {
             maxWidth="xl"
             sx={{
                padding: {
-                  xs: '0 24px',
+                  xs: '0 32px',
                   sm: '0 32px',
                   md: '0 64px',
                   lg: '0 165px',
+               },
+               overflow: {
+                  xs: 'hidden',
+                  sm: 'unset',
                },
             }}
          >

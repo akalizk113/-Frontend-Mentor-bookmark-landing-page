@@ -9,6 +9,7 @@ const Slider = () => {
          columnSpacing={{ xl: '120px' }}
          sx={{
             mt: {
+               xs: '84px',
                sm: '110px',
                md: '110px',
                lg: '110px',
@@ -22,14 +23,15 @@ const Slider = () => {
             xs={12}
             sx={{
                order: {
-                  sm: 1,
+                  xs: 1,
                   xl: 'unset',
                },
                textAlign: {
-                  sm: 'center',
+                  xs: 'center',
                   xl: 'unset',
                },
                mt: {
+                  xs: '104px',
                   sm: '160px',
                   xl: '0',
                },
@@ -38,12 +40,22 @@ const Slider = () => {
             <Typography
                variant="h3"
                fontWeight="500"
-               fontSize="2.4rem"
+               fontSize={{
+                  xs: '1.6rem',
+                  sm: '2.4rem',
+               }}
                gutterBottom
             >
                A Simple Bookmark Manager
             </Typography>
-            <Typography paragraph fontSize="18px" color="hsl(229, 8%, 60%)">
+            <Typography
+               paragraph
+               fontSize={{
+                  xs: '0.8rem',
+                  sm: '1rem',
+               }}
+               color="hsl(229, 8%, 60%)"
+            >
                A clean and simple interface to organize your favourite websites.
                Open a new browser tab and see your sites load instantly. Try it
                for free.
@@ -54,14 +66,31 @@ const Slider = () => {
                   marginTop: 32,
                }}
             >
-               <Button variant="custom" size="large">
+               <Button
+                  variant="custom"
+                  size="large"
+                  sx={{
+                     '@media screen and (min-width: 375px) and (max-width: 768px)':
+                        {
+                           fontSize: '12px',
+                           padding: '8px 16px',
+                        },
+                  }}
+               >
                   Get it on Chrome
                </Button>
                <Button
                   variant="custom"
                   color="gray"
                   size="large"
-                  sx={{ marginLeft: '16px' }}
+                  sx={{
+                     marginLeft: '16px',
+                     '@media screen and (min-width: 375px) and (max-width: 768px)':
+                        {
+                           fontSize: '12px',
+                           padding: '8px 16px',
+                        },
+                  }}
                >
                   Get it on Firefox
                </Button>
@@ -74,10 +103,12 @@ const Slider = () => {
             sx={{
                position: 'relative',
                order: {
-                  sm: 0,
+                  xs: 0,
+                  lg: 'unset',
                },
                textAlign: {
-                  sm: 'center',
+                  xs: 'center',
+                  lg: 'unset',
                },
             }}
          >
