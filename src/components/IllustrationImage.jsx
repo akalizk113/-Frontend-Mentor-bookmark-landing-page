@@ -28,6 +28,10 @@ const IllustrationImage = ({ src, width, height, position = 'right' }) => {
                borderBottomRightRadius: position === 'left' ? '30%' : 0,
                borderBottomLeftRadius: position === 'right' ? '30%' : 0,
             },
+            m: {
+               xs: '0 auto',
+               xl: 'unset',
+            },
          }}
       />
    );

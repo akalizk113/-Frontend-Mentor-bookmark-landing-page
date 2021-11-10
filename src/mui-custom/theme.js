@@ -26,6 +26,10 @@ const theme = createTheme({
    },
    breakpoints: {
       values: {
+         xs: 375,
+         sm: 600,
+         md: 900,
+         lg: 1200,
          xl: 1440,
       },
    },
@@ -133,9 +137,7 @@ const theme = createTheme({
                   color: secondaryColor,
                },
             },
-            '&-expandIconWrapper': {
-               color: secondaryColor,
-            },
+
             expandIconWrapper: {
                color: primaryColor,
                '&.Mui-expanded': {

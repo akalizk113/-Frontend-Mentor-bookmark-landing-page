@@ -6,12 +6,35 @@ const Slider = () => {
    return (
       <Grid
          container
-         columnSpacing="120px"
+         columnSpacing={{ xl: '120px' }}
          sx={{
-            marginTop: '110px',
+            mt: {
+               sm: '110px',
+               md: '110px',
+               lg: '110px',
+               xl: '110px',
+            },
          }}
       >
-         <Grid item xl={6}>
+         <Grid
+            item
+            xl={6}
+            xs={12}
+            sx={{
+               order: {
+                  sm: 1,
+                  xl: 'unset',
+               },
+               textAlign: {
+                  sm: 'center',
+                  xl: 'unset',
+               },
+               mt: {
+                  sm: '160px',
+                  xl: '0',
+               },
+            }}
+         >
             <Typography
                variant="h3"
                fontWeight="500"
@@ -47,8 +70,15 @@ const Slider = () => {
          <Grid
             item
             xl={6}
+            xs={12}
             sx={{
                position: 'relative',
+               order: {
+                  sm: 0,
+               },
+               textAlign: {
+                  sm: 'center',
+               },
             }}
          >
             <IllustrationImage

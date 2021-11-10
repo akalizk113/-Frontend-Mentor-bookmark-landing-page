@@ -6,7 +6,8 @@ const ExtensionCard = (props) => {
    return (
       <Grid
          item
-         xl={4}
+         lg={4}
+         sm={6}
          sx={{
             height: '370px',
             alignSelf: { alignSelf },
@@ -39,8 +40,14 @@ const ExtensionCard = (props) => {
             <Typography
                variant="body1"
                sx={{
-                  mt: '16px',
-                  mb: '32px',
+                  mt: {
+                     xs: '0',
+                     lg: '16px',
+                  },
+                  mb: {
+                     xs: '8px',
+                     lg: '32px',
+                  },
                   color: 'hsl(229, 8%, 60%)',
                   fontSize: '16px',
                }}
@@ -50,7 +57,10 @@ const ExtensionCard = (props) => {
             <Box
                sx={{
                   position: 'absolute',
-                  bottom: '90px',
+                  bottom: {
+                     xs: '78px',
+                     xl: '90px',
+                  },
                   width: '100%',
                   height: '10px',
                   backgroundImage: `url('${bgDotSvg}')`,

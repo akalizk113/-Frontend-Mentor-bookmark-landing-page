@@ -26,8 +26,28 @@ const Extensions = () => {
                you’ve got a favourite you’d like us to prioritize.
             </Typography>
          </Box>
-         <Box sx={{ width: '910px', m: '0 auto' }}>
-            <Grid container sx={{ height: '450px' }} columnSpacing="36px">
+         <Box
+            sx={{
+               width: {
+                  xs: '100%',
+                  sm: '620px',
+                  md: '620px',
+                  lg: '910px',
+               },
+               m: '0 auto',
+            }}
+         >
+            <Grid
+               container
+               sx={{
+                  height: {
+                     xs: 'unset',
+                     lg: '450px',
+                  },
+               }}
+               columnSpacing="36px"
+               rowSpacing={{ xs: '36px', xl: 'unset' }}
+            >
                <ExtensionCard
                   imgSrc={logoChrome}
                   title="Add to Chrome"

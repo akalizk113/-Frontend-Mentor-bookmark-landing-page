@@ -59,7 +59,12 @@ const Contact = () => {
    return (
       <Box
          sx={{
-            m: '160px -165px 0',
+            m: {
+               xs: '100px -24px 0',
+               sm: '100px -32px 0',
+               md: '100px -64px 0',
+               lg: '160px -165px 0',
+            },
             height: '360px',
             bgcolor: 'hsl(231, 69%, 60%)',
             textAlign: 'center',

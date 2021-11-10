@@ -12,7 +12,12 @@ function App() {
          <Container
             maxWidth="xl"
             sx={{
-               padding: '0 165px',
+               padding: {
+                  xs: '0 24px',
+                  sm: '0 32px',
+                  md: '0 64px',
+                  lg: '0 165px',
+               },
             }}
          >
             <Header />
