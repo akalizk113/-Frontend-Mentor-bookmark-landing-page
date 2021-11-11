@@ -105,7 +105,7 @@ const Feature = () => {
                value={tabValue}
                onChange={handleChange}
                sx={{
-                  '@media screen and (min-width: 375px) and (max-width: 768px)':
+                  '@media screen and (min-width: 375px) and (max-width: 600px)':
                      {
                         '& .MuiTabs-flexContainer': {
                            flexDirection: 'column',

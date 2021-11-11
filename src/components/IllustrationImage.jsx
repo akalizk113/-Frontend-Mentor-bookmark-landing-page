@@ -32,7 +32,7 @@ const IllustrationImage = ({ src, width, height, position = 'right' }) => {
                xs: '0 auto',
                xl: 'unset',
             },
-            '@media screen and (min-width: 375px) and (max-width: 768px)': {
+            '@media screen and (min-width: 375px) and (max-width: 600px)': {
                width: '100%',
                height: '210px',
             },

@@ -13,7 +13,7 @@ const MyHeader = styled('header')({
    display: 'flex',
    alignItems: 'center',
    marginTop: 48,
-   '@media screen and (min-width: 375px) and (max-width: 768px)': {
+   '@media screen and (min-width: 375px) and (max-width: 600px)': {
       marginTop: 40,
    },
 });
@@ -28,7 +28,7 @@ const NavItem = styled('span')({
       cursor: 'pointer',
       color: 'hsl(0, 94%, 66%)',
    },
-   '@media screen and (min-width: 375px) and (max-width: 768px)': {
+   '@media screen and (min-width: 375px) and (max-width: 600px)': {
       color: '#fff',
       display: 'flex',
       width: '100%',
@@ -54,9 +54,9 @@ const Header = () => {
             sx={{
                display: {
                   xs: show ? 'none' : 'block',
-                  md: 'none',
+                  sm: 'none',
                },
-               '@media screen and (min-width: 375px) and (max-width: 768px)': {
+               '@media screen and (min-width: 375px) and (max-width: 600px)': {
                   position: 'absolute',
                   top: '40px',
                   right: '32px',
@@ -75,7 +75,7 @@ const Header = () => {
                   sm: 'auto',
                },
                alignItems: 'center',
-               '@media screen and (min-width: 375px) and (max-width: 768px)': {
+               '@media screen and (min-width: 375px) and (max-width: 600px)': {
                   position: 'fixed',
                   inset: 0,
                   bgcolor: 'rgba(47, 53, 79, 0.8)',
@@ -90,9 +90,9 @@ const Header = () => {
                sx={{
                   display: {
                      xs: show ? 'block' : 'none',
-                     md: 'none',
+                     sm: 'none',
                   },
-                  '@media screen and (min-width: 375px) and (max-width: 768px)':
+                  '@media screen and (min-width: 375px) and (max-width: 600px)':
                      {
                         position: 'absolute',
                         top: '40px',
@@ -102,7 +102,7 @@ const Header = () => {
                      },
                   '& + svg': {
                      display: {
-                        md: 'none',
+                        sm: 'none',
                      },
                   },
                }}
@@ -143,7 +143,7 @@ const Header = () => {
                   textTransform: 'uppercase',
                   letterSpacing: '1px',
                   ml: '50px',
-                  '@media screen and (min-width: 375px) and (max-width: 768px)':
+                  '@media screen and (min-width: 375px) and (max-width: 600px)':
                      {
                         marginTop: '24px !important',
                         width: '100%',
@@ -159,7 +159,7 @@ const Header = () => {
                sx={{
                   display: {
                      xs: 'block',
-                     md: 'none',
+                     sm: 'none',
                   },
                   position: 'absolute',
                   bottom: '40px',

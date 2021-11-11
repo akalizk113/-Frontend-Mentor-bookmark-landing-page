@@ -45,7 +45,7 @@ const Accordions = () => {
                   >
                      <Typography
                         sx={{
-                           '@media screen and (min-width: 375px) and (max-width: 768px)':
+                           '@media screen and (min-width: 375px) and (max-width: 600px)':
                               {
                                  fontSize: '16px',
                                  textAlign: 'left',
@@ -58,7 +58,7 @@ const Accordions = () => {
                   <AccordionDetails>
                      <Typography
                         sx={{
-                           '@media screen and (min-width: 375px) and (max-width: 768px)':
+                           '@media screen and (min-width: 375px) and (max-width: 600px)':
                               {
                                  fontSize: '16px',
                                  textAlign: 'left',
@@ -79,7 +79,7 @@ const Accordions = () => {
                   >
                      <Typography
                         sx={{
-                           '@media screen and (min-width: 375px) and (max-width: 768px)':
+                           '@media screen and (min-width: 375px) and (max-width: 600px)':
                               {
                                  fontSize: '16px',
                                  textAlign: 'left',
@@ -92,7 +92,7 @@ const Accordions = () => {
                   <AccordionDetails>
                      <Typography
                         sx={{
-                           '@media screen and (min-width: 375px) and (max-width: 768px)':
+                           '@media screen and (min-width: 375px) and (max-width: 600px)':
                               {
                                  fontSize: '16px',
                                  textAlign: 'left',
@@ -117,7 +117,7 @@ const Accordions = () => {
                   >
                      <Typography
                         sx={{
-                           '@media screen and (min-width: 375px) and (max-width: 768px)':
+                           '@media screen and (min-width: 375px) and (max-width: 600px)':
                               {
                                  fontSize: '16px',
                                  textAlign: 'left',
@@ -130,7 +130,7 @@ const Accordions = () => {
                   <AccordionDetails>
                      <Typography
                         sx={{
-                           '@media screen and (min-width: 375px) and (max-width: 768px)':
+                           '@media screen and (min-width: 375px) and (max-width: 600px)':
                               {
                                  fontSize: '16px',
                                  textAlign: 'left',
@@ -153,7 +153,7 @@ const Accordions = () => {
                   >
                      <Typography
                         sx={{
-                           '@media screen and (min-width: 375px) and (max-width: 768px)':
+                           '@media screen and (min-width: 375px) and (max-width: 600px)':
                               {
                                  fontSize: '16px',
                                  textAlign: 'left',
@@ -166,7 +166,7 @@ const Accordions = () => {
                   <AccordionDetails>
                      <Typography
                         sx={{
-                           '@media screen and (min-width: 375px) and (max-width: 768px)':
+                           '@media screen and (min-width: 375px) and (max-width: 600px)':
                               {
                                  fontSize: '16px',
                                  textAlign: 'left',

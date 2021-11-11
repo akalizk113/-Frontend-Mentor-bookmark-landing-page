@@ -70,7 +70,7 @@ const Slider = () => {
                   variant="custom"
                   size="large"
                   sx={{
-                     '@media screen and (min-width: 375px) and (max-width: 768px)':
+                     '@media screen and (min-width: 375px) and (max-width: 600px)':
                         {
                            fontSize: '12px',
                            padding: '8px 16px',
@@ -85,7 +85,7 @@ const Slider = () => {
                   size="large"
                   sx={{
                      marginLeft: '16px',
-                     '@media screen and (min-width: 375px) and (max-width: 768px)':
+                     '@media screen and (min-width: 375px) and (max-width: 600px)':
                         {
                            fontSize: '12px',
                            padding: '8px 16px',

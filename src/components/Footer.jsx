@@ -32,7 +32,7 @@ const Footer = () => {
                lg: '0 165px 0',
             },
             height: {
-               md: '90px',
+               sm: '90px',
             },
             bgcolor: '#242946',
             display: 'flex',

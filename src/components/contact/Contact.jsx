@@ -132,7 +132,7 @@ const Contact = () => {
                      },
                      mb: {
                         xs: '40px',
-                        xl: 0,
+                        lg: 0,
                      },
 
                      display: 'flex',
@@ -141,7 +141,8 @@ const Contact = () => {
                      '& input': {
                         height: {
                            xs: '42px',
-                           sm: 'unset',
+                           sm: '42px',
+                           lg: 'unset',
                         },
                      },
                   }}
@@ -176,11 +177,16 @@ const Contact = () => {
                   type="submit"
                   sx={{
                      ml: {
-                        sm: 'auto',
+                        sm: '16px',
+                        md: 'auto',
                      },
                      mb: {
                         xs: '36px',
                         sm: 0,
+                     },
+                     height: {
+                        sm: '51px',
+                        lg: 'unset',
                      },
                   }}
                >

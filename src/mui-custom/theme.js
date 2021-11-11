@@ -105,7 +105,7 @@ const theme = createTheme({
                   fontWeight: '500',
                   color: grayColor,
                   marginBottom: '32px',
-                  '@media screen and (min-width: 375px) and (max-width: 768px)':
+                  '@media screen and (min-width: 375px) and (max-width: 600px)':
                      {
                         fontSize: '1.2rem',
                         marginBottom: '24px',
@@ -121,7 +121,7 @@ const theme = createTheme({
                   fontSize: '1rem',
                   fontWeight: 400,
                   lineHeight: 1.5,
-                  '@media screen and (min-width: 375px) and (max-width: 768px)':
+                  '@media screen and (min-width: 375px) and (max-width: 600px)':
                      {
                         fontSize: '0.85rem',
                      },
