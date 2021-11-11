@@ -53,16 +53,15 @@ const Header = () => {
             onClick={() => setShow((prev) => !prev)}
             sx={{
                display: {
+                  xs: show ? 'none' : 'block',
                   md: 'none',
                },
                '@media screen and (min-width: 375px) and (max-width: 768px)': {
-                  display: 'block',
                   position: 'absolute',
                   top: '40px',
                   right: '32px',
                   color: 'gray',
                   zIndex: 1000,
-                  display: show ? 'none' : 'block',
                },
             }}
          />
@@ -90,7 +89,8 @@ const Header = () => {
                onClick={() => setShow((prev) => !prev)}
                sx={{
                   display: {
-                     sm: 'none',
+                     xs: show ? 'none' : 'block',
+                     md: 'none',
                   },
                   '@media screen and (min-width: 375px) and (max-width: 768px)':
                      {
@@ -99,7 +99,6 @@ const Header = () => {
                         right: '32px',
                         color: '#fff',
                         zIndex: 1000,
-                        display: show ? 'block' : 'none',
                      },
                }}
             />
