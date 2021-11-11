@@ -60,7 +60,6 @@ const ExtensionCard = (props) => {
                   position: 'absolute',
                   bottom: {
                      xs: '78px',
-                     xl: '90px',
                   },
                   width: '100%',
                   height: '10px',
