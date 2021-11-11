@@ -7,7 +7,15 @@ import { logoChrome, logoFirefox, logoOpera } from '../../assets/resources';
 const Extensions = () => {
    return (
       <>
-         <Box sx={{ m: '160px auto 0', textAlign: 'center' }}>
+         <Box
+            sx={{
+               m: {
+                  xs: '160px auto 0',
+                  lg: '240px auto 0',
+               },
+               textAlign: 'center',
+            }}
+         >
             <Typography variant="title" component="h5">
                Download the extension
             </Typography>

@@ -7,8 +7,16 @@ import {
    AccordionDetails,
 } from '@mui/material';
 
+import { useState } from 'react';
+
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
+
 const Accordions = () => {
+   const [expanded, setExpanded] = useState(false);
+
+   const handleChange = (panel) => (event, isExpanded) => {
+      setExpanded(isExpanded ? panel : false);
+   };
    return (
       <>
          <Box
@@ -37,7 +45,10 @@ const Accordions = () => {
                   borderBottom: '1px solid #dfdfdf',
                }}
             >
-               <Accordion>
+               <Accordion
+                  expanded={expanded === 'panel1'}
+                  onChange={handleChange('panel1')}
+               >
                   <AccordionSummary
                      expandIcon={<ExpandMoreIcon />}
                      aria-controls="panel1a-content"
@@ -71,7 +82,10 @@ const Accordions = () => {
                      </Typography>
                   </AccordionDetails>
                </Accordion>
-               <Accordion>
+               <Accordion
+                  expanded={expanded === 'panel2'}
+                  onChange={handleChange('panel2')}
+               >
                   <AccordionSummary
                      expandIcon={<ExpandMoreIcon />}
                      aria-controls="panel2a-content"
@@ -109,7 +123,10 @@ const Accordions = () => {
                      </Typography>
                   </AccordionDetails>
                </Accordion>
-               <Accordion>
+               <Accordion
+                  expanded={expanded === 'panel3'}
+                  onChange={handleChange('panel3')}
+               >
                   <AccordionSummary
                      expandIcon={<ExpandMoreIcon />}
                      aria-controls="panel3a-content"
@@ -145,7 +162,10 @@ const Accordions = () => {
                      </Typography>
                   </AccordionDetails>
                </Accordion>
-               <Accordion>
+               <Accordion
+                  expanded={expanded === 'panel4'}
+                  onChange={handleChange('panel4')}
+               >
                   <AccordionSummary
                      expandIcon={<ExpandMoreIcon />}
                      aria-controls="panel3a-content"

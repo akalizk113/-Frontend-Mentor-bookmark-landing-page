@@ -19,21 +19,21 @@ const Slider = () => {
       >
          <Grid
             item
-            xl={6}
+            lg={6}
             xs={12}
             sx={{
                order: {
                   xs: 1,
-                  xl: 'unset',
+                  lg: 'unset',
                },
                textAlign: {
                   xs: 'center',
-                  xl: 'unset',
+                  lg: 'unset',
                },
                mt: {
                   xs: '104px',
                   sm: '160px',
-                  xl: '0',
+                  lg: '0',
                },
             }}
          >
@@ -45,6 +45,7 @@ const Slider = () => {
                   sm: '2.4rem',
                }}
                gutterBottom
+               mt={{ lg: '76px' }}
             >
                A Simple Bookmark Manager
             </Typography>
@@ -98,7 +99,7 @@ const Slider = () => {
          </Grid>
          <Grid
             item
-            xl={6}
+            lg={6}
             xs={12}
             sx={{
                position: 'relative',
