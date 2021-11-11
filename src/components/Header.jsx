@@ -89,7 +89,7 @@ const Header = () => {
                onClick={() => setShow((prev) => !prev)}
                sx={{
                   display: {
-                     xs: show ? 'none' : 'block',
+                     xs: show ? 'block' : 'none',
                      md: 'none',
                   },
                   '@media screen and (min-width: 375px) and (max-width: 768px)':
