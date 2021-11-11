@@ -90,11 +90,10 @@ const Header = () => {
                onClick={() => setShow((prev) => !prev)}
                sx={{
                   display: {
-                     md: 'none',
+                     sm: 'none',
                   },
                   '@media screen and (min-width: 375px) and (max-width: 768px)':
                      {
-                        display: 'block',
                         position: 'absolute',
                         top: '40px',
                         right: '32px',
@@ -106,11 +105,9 @@ const Header = () => {
             />
             <svg
                style={{
-                  display: 'none',
-                  '@media screen and (min-width: 375px) and (max-width: 768px)':
-                     {
-                        display: 'block',
-                     },
+                  display: {
+                     sm: 'none',
+                  },
                   position: 'absolute',
                   top: 40,
                   left: 32,
