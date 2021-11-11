@@ -100,13 +100,15 @@ const Header = () => {
                         color: '#fff',
                         zIndex: 1000,
                      },
+                  '& + svg': {
+                     display: {
+                        md: 'none',
+                     },
+                  },
                }}
             />
             <svg
                style={{
-                  display: {
-                     sm: 'none',
-                  },
                   position: 'absolute',
                   top: 40,
                   left: 32,
